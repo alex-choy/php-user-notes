@@ -1,6 +1,5 @@
-<?php  
+<?php
 	require_once 'setup.php';
-	// require_once 'login.php';
 
 	echo <<< _END
 		<!DOCTYPE html>
@@ -19,13 +18,13 @@
 
 	$query = "CREATE TABLE uploads (
 		id SMALLINT NOT NULL AUTO_INCREMENT,
-		username VARCHAR(32) NOT NULL, 
-		encryption_type VARCHAR(1), 
-		key, VARCHAR(32) NOT NULL, 
-		content VARCHAR(256) NOT NULL, 
+		username VARCHAR(32) NOT NULL,
+		encryption_type VARCHAR(1),
+		key, VARCHAR(32) NOT NULL,
+		content VARCHAR(256) NOT NULL,
 		PRIMARY KEY (id)
 	)";
 
 	$result = $conn->query($query);
-	
+
 ?>
